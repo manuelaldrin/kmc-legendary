@@ -27,7 +27,18 @@
 <body class="overflow-body">
 
 <div class="preloader">
-	<div ng-attr-style="width:{{config.size}}px;height:{{config.size}}px;background:{{config.background || 'none'}}" class="inner-preloader" style="width:200px;height:200px;background:#ffffff"><div id="stock-preview-box" ld-spinner-preview="" ng-config="config" ng-ctrl="demo" ng-mod="mod" ng-class="{'loading':demo.show != 3}" style="width:100%;height:100%;margin:0;padding:0;" class="ng-isolate-scope"><div class="lds-svg ng-scope"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-bricks"><rect ng-attr-fill="{{config.c1}}" ng-attr-x="{{config.x}}" ng-attr-y="{{config.x}}" ng-attr-width="{{config.w}}" ng-attr-height="{{config.w}}" ng-attr-rx="{{config.radius}}" ng-attr-ry="{{config.radius}}" fill="#001844" x="15" y="15" width="30" height="30" rx="3" ry="3"><animate attributeName="x" calcMode="linear" values="15;55;55;55;55;15;15;15;15" keyTimes="0;0.083;0.25;0.333;0.5;0.583;0.75;0.833;1" dur="2" begin="-1.8333333333333333s" repeatCount="indefinite"></animate><animate attributeName="y" calcMode="linear" values="15;55;55;55;55;15;15;15;15" keyTimes="0;0.083;0.25;0.333;0.5;0.583;0.75;0.833;1" dur="2" begin="-1.3333333333333333s" repeatCount="indefinite"></animate></rect><rect ng-attr-fill="{{config.c2}}" ng-attr-x="{{config.x}}" ng-attr-y="{{config.x}}" ng-attr-width="{{config.w}}" ng-attr-height="{{config.w}}" ng-attr-rx="{{config.radius}}" ng-attr-ry="{{config.radius}}" fill="#7e98cd" x="15" y="55" width="30" height="30" rx="3" ry="3"><animate attributeName="x" calcMode="linear" values="15;55;55;55;55;15;15;15;15" keyTimes="0;0.083;0.25;0.333;0.5;0.583;0.75;0.833;1" dur="2" begin="-1.1666666666666667s" repeatCount="indefinite"></animate><animate attributeName="y" calcMode="linear" values="15;55;55;55;55;15;15;15;15" keyTimes="0;0.083;0.25;0.333;0.5;0.583;0.75;0.833;1" dur="2" begin="-0.6666666666666666s" repeatCount="indefinite"></animate></rect><rect ng-attr-fill="{{config.c3}}" ng-attr-x="{{config.x}}" ng-attr-y="{{config.x}}" ng-attr-width="{{config.w}}" ng-attr-height="{{config.w}}" ng-attr-rx="{{config.radius}}" ng-attr-ry="{{config.radius}}" fill="#fee850" x="55" y="46.8959" width="30" height="30" rx="3" ry="3"><animate attributeName="x" calcMode="linear" values="15;55;55;55;55;15;15;15;15" keyTimes="0;0.083;0.25;0.333;0.5;0.583;0.75;0.833;1" dur="2" begin="-0.5s" repeatCount="indefinite"></animate><animate attributeName="y" calcMode="linear" values="15;55;55;55;55;15;15;15;15" keyTimes="0;0.083;0.25;0.333;0.5;0.583;0.75;0.833;1" dur="2" begin="0s" repeatCount="indefinite"></animate></rect></svg></div><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-bricks"><div></div><div></div><div></div></div></div></div></div>
+	<div class="inner-preloader">
+			
+		<div class="group"> 
+		<div class="bigSqr">
+		  <div class="square first"></div>
+		  <div class="square second"></div>
+		  <div class="square third"></div>
+		  <div class="square fourth"></div>
+		</div>
+		<div class="text">loading</div>
+	  </div>
+	</div>
 </div>
 
 	<div id="main-wrapper"> <!-- main wrapper -->
@@ -216,13 +227,23 @@
 		<section class="video-wrap wow zoomIn">
 			<div class="video-container">
 				<div class="video-main">
-					<img class="video-img" src="images/video-thumbnail.jpg" alt="Video">
-					<img class="play-icon" src="images/play-icon.png" alt="Play">
+					<!-- <img class="video-img" src="images/video-thumbnail.jpg" alt="Video">
+					<img class="play-icon" src="images/play-icon.png" alt="Play"> -->
+					<video loop autoplay>
+						<source src="files/kmc-bts.mp4" type="video/mp4">
+						<source src="files/kmc-bts.ogg" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+					
 				</div>
 			</div>
 		</section>
 
-		<section class="squad-wrap">
+		<section class="vote-wrap">
+			<div data-paperform-id="manuelaldrin"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed"; document.body.appendChild(script); })()</script>
+		</section>
+
+		<section class="squad-wrap hidden">
 			<div class="squad-container container">
 				
 				<div class="squad-item">

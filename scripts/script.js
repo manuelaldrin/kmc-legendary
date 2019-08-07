@@ -72,7 +72,7 @@
 		$('body').removeClass('overflow-body');
 		setTimeout(function(){
 			$('.preloader').fadeOut( "slow", function() {
-				// Animation complete.
+				
 			  });
 		},2000);
 	});
